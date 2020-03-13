@@ -1,7 +1,9 @@
 :root {
 	--nav-color: #3498db;
 	--side-nav-width: 65px;
-	--background-color: #f4f6f9;
+	--moving-nav-width: 180px;
+	--background-color: #fff;
+	--moving-nav-color: #eaeaea;
 	--top-nav-height: 50px;
 }
 
@@ -11,10 +13,10 @@
 	box-sizing: border-box;
 }
 
-body {
+/*body {
 	background-color: #eee;
 }
-
+*/
 ul {
 	list-style: none;
 }
@@ -28,21 +30,63 @@ a {
 	background-color: var(--nav-color);
 	width: var(--side-nav-width);
 	height: 100vh;
-	position: fixed;
-	display: flex;
-	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
 }	
 
 #side-nav .hamburguer {
 	display: block;
-	margin-top: 15px;
+	margin-top: 30px;
+	text-align: center;
 }
 
-#side-nav .hamburguer img {
+#side-nav .hamburguer a img {
 	width: 26px;
 }
 
-#top-nav {
+#side-nav ul {
+	margin-top: 150px;
+	text-align: center;
+}
+
+#side-nav ul li{
+	margin: 50px 0;
+}
+
+#side-nav ul li a img {
+	width: 25px;
+}
+
+#side-nav .logout {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}	
+
+#side-nav div form .logout img {
+    width: 30px;
+}
+
+#moving-nav {
+	background-color: var(--moving-nav-color);
+	width: 0;
+	margin-left: var(--side-nav-width);
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: width 0.25s ease-out;
+}
+
+#moving-nav.open {
+	width: var(--moving-nav-width) !important;
+}
+
+/*#top-nav {
 	width: 100%;
 	position: fixed;
 	height: var(--top-nav-height);
@@ -51,9 +95,23 @@ a {
 
 #top-nav ul li {
 	display: inline-block;
+	padding: 15px 0;
 }
+
+#top-nav .top-logout {
+	color: var(--nav-color);
+	line-height: var(--top-nav-height);
+	display: inline-block;
+	padding: 15px 0;
+}*/
 
 .main-wrapper {
 	margin-left: var(--side-nav-width);
 	background-color: var(--background-color);
+	padding: 20px;
+	transition: margin-left 0.25s ease-out;
+}
+
+.main-wrapper.open {
+	margin-left: calc(var(--side-nav-width) + var(--moving-nav-width));
 }
