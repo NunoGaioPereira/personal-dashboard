@@ -29,7 +29,18 @@ a {
 	width: var(--side-nav-width);
 	height: 100vh;
 	position: fixed;
+	display: flex;
+	justify-content: center;
 }	
+
+#side-nav .hamburguer {
+	display: block;
+	margin-top: 15px;
+}
+
+#side-nav .hamburguer img {
+	width: 26px;
+}
 
 #top-nav {
 	width: 100%;
