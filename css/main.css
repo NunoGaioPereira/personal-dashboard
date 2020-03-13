@@ -5,6 +5,8 @@
 	--background-color: #fff;
 	--moving-nav-color: #eaeaea;
 	--top-nav-height: 50px;
+	--text-color: #444;
+	--light-text-color: #c3c3c3;
 }
 
 * {
@@ -13,10 +15,12 @@
 	box-sizing: border-box;
 }
 
-/*body {
-	background-color: #eee;
+body {
+	/*font-family: 'Segoe UI', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+	color: var(--text-color);
 }
-*/
+
 ul {
 	list-style: none;
 }
@@ -114,4 +118,8 @@ a {
 
 .main-wrapper.open {
 	margin-left: calc(var(--side-nav-width) + var(--moving-nav-width));
+}
+
+.main-wrapper p {
+	color: var(--light-text-color);
 }
