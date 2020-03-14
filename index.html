@@ -5,6 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+	<div id="cover"></div>
+	<div id="extra-nav"></div>
+
 	<div id="side-nav">
 		<div class="hamburguer"><a href="#/"><img src="./includes/imgs/hamburguer.png"></a></div>
 		<ul>
@@ -44,6 +47,12 @@
 			// document.querySelector(".main-wrapper").style.marginLeft="var(--side-nav-width)";
 			document.getElementById("moving-nav").classList.toggle('open');
 			document.querySelector(".main-wrapper").classList.toggle('open');
+		});
+
+		const extra = document.querySelector(".logout");
+		extra.addEventListener('click', function(){
+			document.getElementById("extra-nav").classList.toggle('open');
+			document.getElementById("cover").classList.toggle('open');
 		});
 
 	</script>

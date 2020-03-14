@@ -123,3 +123,35 @@ a {
 .main-wrapper p {
 	color: var(--light-text-color);
 }
+
+#extra-nav {
+	background-color: #fff;
+	z-index: 10;
+	position: absolute;
+	height: 100vh;
+	width: 250px;
+	left: -250px;
+	transition: left 0.2s ease-out;
+}
+
+#extra-nav.open {
+	left: 0;
+}
+
+#cover {
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.25s ease-out;
+}
+
+#cover.open {
+	opacity: 1;
+	visibility: visible;
+}
