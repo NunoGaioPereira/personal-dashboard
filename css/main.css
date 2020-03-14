@@ -1,6 +1,6 @@
 :root {
 	--nav-color: #3498db;
-	--side-nav-width: 65px;
+	--side-nav-width: 60px;
 	--moving-nav-width: 180px;
 	--background-color: #fff;
 	--moving-nav-color: #eaeaea;
@@ -65,14 +65,14 @@ a {
 #side-nav .logout {
     position: absolute;
     bottom: 20px;
-    left: 15px;
+    left: 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }	
 
 #side-nav div form .logout img {
-    width: 30px;
+    width: 25px;
 }
 
 #moving-nav {
@@ -84,11 +84,61 @@ a {
 	top: 0;
 	left: 0;
 	transition: width 0.25s ease-out;
+	overflow-x: hidden;
 }
 
 #moving-nav.open {
 	width: var(--moving-nav-width) !important;
 }
+
+#moving-nav .content {
+	padding: 20px;
+}
+
+#extra-nav {
+	background-color: #fff;
+	z-index: 10;
+	position: absolute;
+	padding: 20px;
+	height: 100vh;
+	width: 250px;
+	left: -250px;
+	transition: left 0.2s ease-out;
+}
+
+#extra-nav.open {
+	left: 0;
+}
+
+#extra-nav .nav-close {
+	position: absolute;
+	right: 20px;
+	top: 25px;
+}
+
+#extra-nav ul {
+	margin-top: 20px;
+}
+
+#extra-nav ul li a {
+	padding: 15px 10px;
+	display: block;
+	transition: background-color 0.2s ease-out;
+	border-radius: 3px;
+}
+
+#extra-nav ul li a:hover {
+	background-color: var(--moving-nav-color);
+}
+
+#extra-nav .nav-close h2 {
+	margin-top: 30px;
+}
+
+#extra-nav .nav-close img {
+	width: 20px;
+}
+
 
 /*#top-nav {
 	width: 100%;
@@ -122,20 +172,6 @@ a {
 
 .main-wrapper p {
 	color: var(--light-text-color);
-}
-
-#extra-nav {
-	background-color: #fff;
-	z-index: 10;
-	position: absolute;
-	height: 100vh;
-	width: 250px;
-	left: -250px;
-	transition: left 0.2s ease-out;
-}
-
-#extra-nav.open {
-	left: 0;
 }
 
 #cover {
