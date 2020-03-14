@@ -5,6 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+
+	<div id="popup">
+		<h2>Welcome</h2>
+		<p>We are working hard to let you enjoy this process.</p>
+		<p><a href="#/">Read More</a></p>
+	</div>
+
 	<div id="cover"></div>
 	<div id="extra-nav">
 		<a href="#/" class="nav-close"><img src="./includes/imgs/cross.png"></a>
@@ -19,7 +26,7 @@
 	<div id="side-nav">
 		<div class="hamburguer"><a href="#/"><img src="./includes/imgs/hamburguer.png"></a></div>
 		<ul>
-			<li><a href=""><img src="./includes/imgs/home.png"></a></li>
+			<li><a href="#/" class="blah"><img src="./includes/imgs/home.png"></a></li>
 			<li><a href=""><img src="./includes/imgs/stats.png"></a></li>
 			<li><a href=""><img src="./includes/imgs/edit.png"></a></li>
 		</ul>
@@ -69,6 +76,11 @@
 		extra_close.addEventListener('click', function(){
 			document.getElementById("extra-nav").classList.toggle('open');
 			document.getElementById("cover").classList.toggle('open');
+		});
+
+		const test = document.querySelector(".blah");
+		test.addEventListener('click', function(){
+			document.getElementById("test").classList.toggle('open');
 		});
 
 	</script>
