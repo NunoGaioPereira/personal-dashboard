@@ -3,11 +3,16 @@
 	--side-nav-width: 60px;
 	--moving-nav-width: 180px;
 	--background-color: #fff;
-	--light-background-color: #f7f8fd;
 	--moving-nav-color: #eaeaea;
 	--top-nav-height: 50px;
 	--text-color: #444;
 	--light-text-color: #c3c3c3;
+
+	--yellow: #faaa1f;
+	--red: #ff4c61;
+	--purple: #6a6ce6;
+	--light-blue: #dbe1f9;
+	--light-blue-gray: #f7f8fd;
 }
 
 * {
@@ -190,7 +195,7 @@ a {
 
 
 .feat-proj .feat-proj-selector {
-	margin: 20px 0;
+	margin: 30px 0;
 }
 
 .feat-proj .feat-proj-selector li {
@@ -209,13 +214,14 @@ a {
 	color: #fff;
 }
 
-
 .feat-proj .proj {
 	padding: 20px;
 	background-color: #fff;
 	border-radius: 12px;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 	max-width: 280px;
+	display: inline-block;
+	margin-right: 30px;
 }
 
 .feat-proj .proj .header {
@@ -233,10 +239,21 @@ a {
 	justify-content: center;
 	align-items: center;
 	margin-right: 25px;
+	font-weight: 600;
 }
 
 .feat-proj .proj .header .proj-title {
 	display: inline-block;
+}
+
+.feat-proj .proj .progress {
+	margin: 30px 0 0;
+	text-align: right;
+}
+
+.feat-proj .proj .progress .percent {
+	color: var(--nav-color);
+	font-weight: 600;
 }
 
 .feat-proj .proj .progress-bar {
@@ -244,7 +261,7 @@ a {
 	height: 10px;
 	background: #eee;
 	border-radius: 1.5em;
-	margin: 30px auto 0;
+	margin: 0 auto 0;
 	position: relative;
 }
 
@@ -259,6 +276,17 @@ a {
 	border-radius: 1.5em;
 }
 
+.feat-proj .proj .progress-bar.yellow:before {
+	background-color: var(--yellow);
+}
+
+.feat-proj .proj .progress-bar.red:before {
+	background-color: var(--red);
+}
+
+.feat-proj .proj .progress-bar.purple:before {
+	background-color: var(--purple);
+}
 
 #cover {
 	left: 0;
