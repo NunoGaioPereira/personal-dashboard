@@ -8,7 +8,7 @@
 
 	<div id="popup">
 		<h2>Welcome</h2>
-		<p>We are working hard to let you enjoy this process.</p>
+		<p>We are working hard to let you enjoy this process. This card will let you decide what next action you wish to take.</p>
 		<p><a href="#/">Read More</a></p>
 	</div>
 
@@ -26,9 +26,10 @@
 	<div id="side-nav">
 		<div class="hamburguer"><a href="#/"><img src="./includes/imgs/hamburguer.png"></a></div>
 		<ul>
-			<li><a href="#/" class="blah"><img src="./includes/imgs/home.png"></a></li>
-			<li><a href=""><img src="./includes/imgs/stats.png"></a></li>
-			<li><a href=""><img src="./includes/imgs/edit.png"></a></li>
+			<a href="#/" class="blah"><img src="./includes/imgs/home.png"></a>
+			<a href="" class="active"><img src="./includes/imgs/stats.png"></a>
+			<a href=""><img src="./includes/imgs/edit.png"></a>
+			<a href=""><img src="./includes/imgs/posts.png"></a>
 		</ul>
 		<div>
 			<form>
@@ -48,13 +49,15 @@
 	<div class="main-wrapper">
 		<h2>Home</h2>
 		<p>Dashboard Overview</p>
-		<!-- <div id="top-nav">
-			<ul>
-				<li><a href=""></a>Notifications</li>
-				<li><a href=""></a>Logout</li>
+
+		<div class="feat-proj">
+			<ul class="feat-proj-selector">
+				<li><a href="#/">All</a></li>
+				<li><a class="active" href="#/">Current</a></li>
+				<li><a href="#/">Pending</a></li>
+				<li><a href="#/">Completed</a></li>
 			</ul>
-			<a href="" class="top-logout">Logout</a>
-		</div>	 -->
+		</div>
 	</div>
 
 	<script type="text/javascript">
@@ -78,9 +81,10 @@
 			document.getElementById("cover").classList.toggle('open');
 		});
 
-		const test = document.querySelector(".blah");
-		test.addEventListener('click', function(){
-			document.getElementById("test").classList.toggle('open');
+		const popup = document.querySelector(".blah");
+		popup.addEventListener('click', function(){
+			document.getElementById("popup").classList.toggle('open');
+			document.getElementById("cover").classList.toggle('open');
 		});
 
 	</script>
