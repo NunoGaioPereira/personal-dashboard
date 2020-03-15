@@ -45,7 +45,7 @@ a {
 	background-color: var(--nav-color);
 	width: var(--side-nav-width);
 	height: 100vh;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 }	
@@ -234,7 +234,7 @@ a {
 	max-width: 280px;
 	display: inline-block;
 	/*margin-right: 30px;*/
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 }
 
 .feat-proj .proj.red {
@@ -326,30 +326,33 @@ a {
 	background-color: var(--purple);
 }
 
-.files {
-	max-width: 700px;
-}
-
-.files .header {
-	display: flex;
-	justify-content: space-between;
+.files, .statistics, .feat-proj {
 	margin-bottom: 20px;
 }
 
-.files .header a {
+.files, .statistics {
+	max-width: 700px;
+}
+
+.files .header, .statistics .header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.files .header a, .statistics .header a {
 	color: var(--light-gray);
 	font-weight: 600;
 	transition: color 0.2s ease-in-out;
 }
 
-.files .header a:hover {
+.files .header a:hover, .statistics .header a:hover {
 	color: var(--nav-color);
 }
 
 .files .file-row {
 	background-color: #fff;
 	border-radius: 8px;
-	padding: 16px 20px;
+	padding: 12px 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -362,8 +365,8 @@ a {
 }
 
 .files .file-row .icon {
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 	border-radius: 4px;
 	background-color: var(--light-purple);
 	overflow: hidden;
@@ -374,8 +377,8 @@ a {
 
 .files .file-row .icon .folder {
 	background-color: var(--purple);
-	width: 80%;
-	height: 80%;
+	width: 65%;
+	height: 65%;
 	display: block;
 	clip-path: polygon(15% 80%, 85% 80%, 85% 30%, 48% 30%, 38% 20%, 15% 20%);
 }
