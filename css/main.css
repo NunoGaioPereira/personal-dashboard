@@ -10,9 +10,12 @@
 	--light-gray: #c3c3c3;
 
 	--yellow: #faaa1f;
+	--light-yellow: #ffe7b9;
 	--red: #ff4c61;
 	--light-red: #ff7788;
+	--lighter-red: #fed1d5;
 	--purple: #6a6ce6;
+	--light-purple: #d3d9f3;
 	--light-blue: #dbe1f9;
 	--light-blue-gray: #f7f8fd;
 }
@@ -208,7 +211,14 @@ a {
 	padding: 8px 18px;
 	margin: 0 5px;
 	color: var(--nav-color);
+	font-weight: 600;
 	border-radius: 50px;
+	transition: all 0.2s ease-in-out;
+}
+
+.feat-proj .feat-proj-selector li a:hover {
+	background-color: var(--nav-color);
+	color: #fff;
 }
 
 .feat-proj .feat-proj-selector li a.active {
@@ -323,11 +333,89 @@ a {
 .files .header {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 20px;
 }
 
 .files .header a {
 	color: var(--light-gray);
 	font-weight: 600;
+	transition: color 0.2s ease-in-out;
+}
+
+.files .header a:hover {
+	color: var(--nav-color);
+}
+
+.files .file-row {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 16px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0;
+	transition: box-shadow 0.25s ease-in-out;
+}
+
+.files .file-row:hover {
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.files .file-row .icon {
+	width: 30px;
+	height: 30px;
+	border-radius: 4px;
+	background-color: var(--light-purple);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.files .file-row .icon .folder {
+	background-color: var(--purple);
+	width: 80%;
+	height: 80%;
+	display: block;
+	clip-path: polygon(15% 80%, 85% 80%, 85% 30%, 48% 30%, 38% 20%, 15% 20%);
+}
+
+.files .file-row.purple .icon {
+	background-color: var(--light-purple);
+}
+
+.files .file-row.purple .icon .folder {
+	background-color: var(--purple);
+}
+
+.files .file-row.red .icon {
+	background-color: var(--lighter-red);
+}
+
+.files .file-row.red .icon .folder {
+	background-color: var(--red);
+}
+
+.files .file-row.yellow .icon {
+	background-color: var(--light-yellow);
+}
+
+.files .file-row.yellow .icon .folder {
+	background-color: var(--yellow);
+}
+
+.files .file-row p {
+	display: inline-block;
+}
+
+.files .file-row p.title {
+	font-weight: bold;
+	color: var(--nav-color);
+}
+
+.files .file-row p.size {
+	font-weight: 600;
+	color: var(--nav-color);
 }
 
 #cover {
