@@ -209,6 +209,57 @@ a {
 	color: #fff;
 }
 
+
+.feat-proj .proj {
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	max-width: 280px;
+}
+
+.feat-proj .proj .header {
+	display: flex;
+	align-items: center;
+}
+
+.feat-proj .proj .header .avatar {
+	width: 35px;
+	height: 35px;
+	color: #fff;
+	border-radius: 50px;
+	background-color: var(--nav-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 25px;
+}
+
+.feat-proj .proj .header .proj-title {
+	display: inline-block;
+}
+
+.feat-proj .proj .progress-bar {
+	width: calc(100% - 2*20);
+	height: 10px;
+	background: #eee;
+	border-radius: 1.5em;
+	margin: 30px auto 0;
+	position: relative;
+}
+
+.feat-proj .proj .progress-bar:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20%;
+	background-color: var(--nav-color);
+	height: 10px;
+	border-radius: 1.5em;
+}
+
+
 #cover {
 	left: 0;
 	top: 0;
