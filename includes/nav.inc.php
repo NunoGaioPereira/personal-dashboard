@@ -5,7 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
 	<div id="popup">
 		<h2>Welcome</h2>
 		<p>We are working hard to let you enjoy this process. This card will let you decide what next action you wish to take.</p>
@@ -42,3 +41,5 @@
 			<h2>Menu</h2>
 		</div>
 	</div>
+
+	<div id="cover"></div>
