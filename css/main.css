@@ -591,3 +591,49 @@ a {
 	visibility: visible;
 	opacity: 1;
 }
+
+
+/*----- DAY --------*/
+
+.day-slider {
+	/*display: flex;*/
+	margin: 20px 0;
+}
+
+.day-slider .day-selector {
+	display: inline-block;
+	background-color: #fff;
+	padding: 15px 12px;
+	border-radius: 1.5em;
+	text-align: center;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	transition: background-color 0.2s ease-in-out;
+	margin: 0 5px;
+}
+
+.day-slider .day-selector.active {
+	background-color: var(--yellow);
+}
+
+.day-slider .day-selector.active > .week-day, .day-slider .day-selector.active > .day {
+	color: #fff;
+}
+
+.day-slider .day-selector:hover {
+	background-color: var(--yellow);
+}
+
+.day-slider .day-selector:hover > .week-day, .day-slider .day-selector:hover > .day {
+	color: #fff;
+}
+
+.day-slider .day-selector .day {
+	color: var(--nav-color);
+	font-weight: 600;
+	transition: color 0.2s ease-in-out;
+}
+
+.day-slider .day-selector .week-day {
+	color: var(--nav-color);
+	transition: color 0.2s ease-in-out;
+}
