@@ -49,6 +49,40 @@
 				</div>
 			</a>
 		</div>
+
+		<div class="day-table-containter">
+			<table>
+					<tr>
+						<th>Legacy</th>
+					</tr>
+					<tr><td>1. </td></tr>
+					<tr><td>2. </td></tr>
+					<tr><td>3. </td></tr>
+					<tr>
+						<th>Gratitude</th>
+					</tr>
+					<tr><td>1. </td></tr>
+					<tr><td>2. </td></tr>
+					<tr><td>3. </td></tr>
+					<tr>
+						<th>Self-love</th>
+					</tr>
+					<tr><td>1. </td></tr>
+					<tr><td>2. </td></tr>
+					<tr><td>3. </td></tr>
+					<tr>
+						<th>Blessings</th>
+					</tr>
+					<tr><td>1. </td></tr>
+					<tr><td>2. </td></tr>
+					<tr><td>3. </td></tr>
+					<tr>
+						<th>Learnings</th>
+					</tr>
+					<tr><td>1. </td></tr>
+					<tr><td>2. </td></tr>
+			</table>
+		</div>
 	</div>
 
 	<script src="js/main.js"></script>

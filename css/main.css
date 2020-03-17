@@ -637,3 +637,12 @@ a {
 	color: var(--nav-color);
 	transition: color 0.2s ease-in-out;
 }
+
+.day-table-container {
+
+}
+
+.day-table-container table, .day-table-container th, .day-table-container td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
