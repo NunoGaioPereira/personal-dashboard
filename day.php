@@ -50,38 +50,40 @@
 			</a>
 		</div>
 
-		<div class="day-table-containter">
-			<table>
+		<div class="day-table-container">
+			<table>	
+					<tr class="header"><th>25 May</th></tr>
 					<tr>
 						<th>Legacy</th>
 					</tr>
-					<tr><td>1. </td></tr>
-					<tr><td>2. </td></tr>
-					<tr><td>3. </td></tr>
+					<tr><td contenteditable="true">1. </td></tr>
+					<tr><td contenteditable="true">2. </td></tr>
+					<tr><td contenteditable="true">3. </td></tr>
 					<tr>
 						<th>Gratitude</th>
 					</tr>
-					<tr><td>1. </td></tr>
-					<tr><td>2. </td></tr>
-					<tr><td>3. </td></tr>
+					<tr><td contenteditable="true">1. </td></tr>
+					<tr><td contenteditable="true">2. </td></tr>
+					<tr><td contenteditable="true">3. </td></tr>
 					<tr>
 						<th>Self-love</th>
 					</tr>
-					<tr><td>1. </td></tr>
-					<tr><td>2. </td></tr>
-					<tr><td>3. </td></tr>
+					<tr><td contenteditable="true">1. </td></tr>
+					<tr><td contenteditable="true">2. </td></tr>
+					<tr><td contenteditable="true">3. </td></tr>
 					<tr>
 						<th>Blessings</th>
 					</tr>
-					<tr><td>1. </td></tr>
-					<tr><td>2. </td></tr>
-					<tr><td>3. </td></tr>
+					<tr><td contenteditable="true">1. </td></tr>
+					<tr><td contenteditable="true">2. </td></tr>
+					<tr><td contenteditable="true">3. </td></tr>
 					<tr>
 						<th>Learnings</th>
 					</tr>
-					<tr><td>1. </td></tr>
-					<tr><td>2. </td></tr>
+					<tr><td contenteditable="true">1. </td></tr>
+					<tr><td contenteditable="true">2. </td></tr>
 			</table>
+			<h2 class="banana" contenteditable="true">Test</h2>
 		</div>
 	</div>
 
