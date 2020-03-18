@@ -83,7 +83,32 @@
 					<tr><td contenteditable="true">1. </td></tr>
 					<tr><td contenteditable="true">2. </td></tr>
 			</table>
-			<h2 class="banana" contenteditable="true">Test</h2>
+			<!-- <h2 class="banana" contenteditable="true">Test</h2> -->
+		</div>
+
+		<div class="table-day">
+			<div class="header"><h4>25 February</h4></div>
+			<div class="entries">
+				<h4 class="title">Legacy</h4>
+				<input class="entry" type="text" name="le1">
+				<input class="entry" type="text" name="le2">
+				<input class="entry" type="text" name="le3">
+				<h4 class="title">Gratitude</h4>
+				<input class="entry" type="text" name="g1">
+				<input class="entry" type="text" name="g2">
+				<input class="entry" type="text" name="g3">
+				<h4 class="title">Self-love</h4>
+				<input class="entry" type="text" name="s1">
+				<input class="entry" type="text" name="s2">
+				<input class="entry" type="text" name="s3">
+				<h4 class="title">Blessings</h4>
+				<input class="entry" type="text" name="b1">
+				<input class="entry" type="text" name="b2">
+				<input class="entry" type="text" name="b3">
+				<h4 class="title">Learnings</h4>
+				<input class="entry" type="text" name="lr1">
+				<input class="entry" type="text" name="lr2">
+			</div>
 		</div>
 	</div>
 

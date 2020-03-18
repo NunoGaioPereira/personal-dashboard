@@ -638,9 +638,6 @@ a {
 	transition: color 0.2s ease-in-out;
 }
 
-.day-table-container {
-
-}
 
 .day-table-container table, .day-table-container th, .day-table-container td {
   /*border: 1px solid black;*/
@@ -650,7 +647,7 @@ a {
 .day-table-container table {
 	text-align: left;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-	width: 200px;
+	width: 300px;
 	/*max-width: 200px;*/
 	/*padding: 10px;*/
 	/*display: inline-block;*/
@@ -676,7 +673,7 @@ a {
 	padding: 1px 3px 1px;
 	overflow: hidden;
 	white-space: nowrap;
-	width: 200px;
+	width: 150px;
 }
 
 .day-table-container td br {
@@ -688,8 +685,42 @@ a {
     white-space:nowrap;
 }
 
+
+.table-day {
+	text-align: left;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	width: 300px;
+}
+
+.table-day .header {
+	padding: 5px;
+	background-color: var(--nav-color);
+	color: #fff;
+	text-align: center;
+}
+
+.table-day .header h4 {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.table-day .entries .entry {
+	width: 100%;
+	border: none;
+	padding: 1px 3px 1px;
+	height: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.table-day .entries .title {
+	font-size: 15px;
+	font-weight: 600;
+	border-top: 2px solid #ddd;
+	padding: 2px;
+}
+
 .banana {
-	overflow: hidden;
+	/*overflow: hidden;*/
 	white-space: nowrap;
 	width: 200px;
 }
