@@ -65,13 +65,15 @@
 					<input class="entry" type="text" name="s1">
 					<input class="entry" type="text" name="s2">
 					<input class="entry" type="text" name="s3">
-					<h4 class="title">Blessings</h4>
-					<input class="entry" type="text" name="b1">
-					<input class="entry" type="text" name="b2">
-					<input class="entry" type="text" name="b3">
-					<h4 class="title">Learnings</h4>
-					<input class="entry" type="text" name="lr1">
-					<input class="entry" type="text" name="lr2">
+					<div class="night">
+						<h4 class="title">Blessings</h4>
+						<input class="entry" type="text" name="b1">
+						<input class="entry" type="text" name="b2">
+						<input class="entry" type="text" name="b3">
+						<h4 class="title">Learnings</h4>
+						<input class="entry" type="text" name="lr1">
+						<input class="entry" type="text" name="lr2">
+					</div>
 				</div>
 			</div>
 		</div>

@@ -728,6 +728,10 @@ a {
 	padding: 2px;
 }
 
+.table-day .entries .night, .table-day .entries .night .entry {
+	background-color: #f0f0f0;
+}
+
 .banana {
 	/*overflow: hidden;*/
 	white-space: nowrap;
@@ -741,4 +745,72 @@ a {
 .banana * {
     display:inline;
     white-space:nowrap;
+}
+
+
+/* --- CALENDAR --- */
+.calendar {
+	/*position: relative;*/
+	margin: 30px auto;
+	background-color: #fff;
+	width: 400px;
+	height: 400px;
+	display: flex;justify-content: space-between;
+	align-items: center;
+	border: 15px solid #fff;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
+}
+
+.calendar .date {
+	width: 400px;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+.calendar .date h3 {
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 24px;
+	font-weight: 500;
+	text-align: center;
+	/*background-color: var(--nav-color);*/
+	/*color: #fff;*/
+}
+
+.calendar .date .days {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.calendar .date .days .day, .calendar .date .days .number {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1.5em;
+	margin: 1px;
+}
+
+.calendar .date .days .number {
+	cursor: pointer;
+	transition: color 0.15s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.calendar .date .days .number:hover {
+	background-color: #222;
+	color: #fff;
+}
+
+
+.calendar .date .days .day:first-child, .calendar .date .days .number:nth-child(7n + 1) {
+	color: #f44336;
+	font-weight: 600;
+}
+
+.calendar .date .days .number.active {
+	background-color: #222;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 1.5em;
 }
