@@ -16,7 +16,7 @@
 		<h2>Your Apps</h2>
 		<ul>
 			<li><a href="">Home</a></li>
-			<li><a href="">Home</a></li>
+			<li><a href="./bucket_list.php">Bucket List</a></li>
 			<li><a href="">Home</a></li>
 		</ul>
 	</div>
@@ -24,8 +24,8 @@
 	<div id="side-nav">
 		<div class="hamburguer"><a href="#/"><img src="./includes/imgs/hamburguer.png"></a></div>
 		<ul>
-			<a href="#/" class="active blah"><img src="./includes/imgs/home.png"></a>
-			<a href=""><img src="./includes/imgs/stats.png"></a>
+			<a href="./" class="active"><img src="./includes/imgs/home.png"></a>
+			<a href="#/" class="blah"><img src="./includes/imgs/stats.png"></a>
 			<a href=""><img src="./includes/imgs/edit.png"></a>
 			<a href=""><img src="./includes/imgs/posts.png"></a>
 		</ul>

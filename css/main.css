@@ -814,3 +814,41 @@ a {
 	cursor: pointer;
 	border-radius: 1.5em;
 }
+
+/*------BUCKET LIST----------*/
+
+.bucket-container {
+	display: flex;
+}
+
+.bucket-container .new-bucket, .bucket-container .bucket {
+	padding: 20px;
+	background-color: #fff;
+	/*border: 2px solid #eee;*/
+	margin: 20px;
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+	width: 280px;
+	height: 180px;
+	border-radius: 8px;
+	display: inline-block;
+	transition: all 0.2s ease-in-out; 
+}
+
+.bucket-container .new-bucket:hover, .bucket-container .bucket:hover {
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bucket-container .bucket {
+	border-left: 8px solid var(--nav-color);
+}
+
+.bucket-container .new-bucket {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.bucket-container .new-bucket p {
+	font-size: 80px;
+}
