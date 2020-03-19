@@ -17,7 +17,7 @@
 		<ul>
 			<li><a href="">Home</a></li>
 			<li><a href="./bucket_list.php">Bucket List</a></li>
-			<li><a href="">Home</a></li>
+			<li><a href="./profile.php">Identity</a></li>
 		</ul>
 	</div>
 
@@ -26,11 +26,12 @@
 		<ul>
 			<a href="./" class="active"><img src="./includes/imgs/home.png"></a>
 			<a href="#/" class="blah"><img src="./includes/imgs/stats.png"></a>
-			<a href=""><img src="./includes/imgs/edit.png"></a>
-			<a href=""><img src="./includes/imgs/posts.png"></a>
+			<a href="#/"><img src="./includes/imgs/edit.png"></a>
+			<a href="#/" class="logout"><img src="./includes/imgs/posts.png"></a>
 		</ul>
 		<ul class="bottom-links">
 			<!-- <a type="submit" name="logout-submit" class="logout" title="Logout"> <img src="includes/imgs/logout.png"></a>	 -->
+			<a href=""><img src="./includes/imgs/white_cog.png"></a>
 			<a href="" class="profile-circle">NP</a>
 		</ul>
 	</div>
