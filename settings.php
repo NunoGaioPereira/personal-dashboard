@@ -4,6 +4,7 @@
 
 	<div class="main-wrapper">
 		<h2>Settings</h2>
+		
 	</div>
 
 	<script src="js/main.js"></script>

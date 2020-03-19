@@ -22,16 +22,21 @@
 	</div>
 
 	<div id="side-nav">
-		<div class="hamburguer"><a href="#/"><img src="./includes/imgs/hamburguer.png"></a></div>
+		<div class="hamburguer">
+			<a href="#/" class="hamb"><img src="./includes/imgs/hamburguer.png"></a>
+			<!-- <a href="#/" class="apps"><img src="./includes/imgs/apps.png"></a> -->
+		
 		<ul>
 			<a href="./" class="active"><img src="./includes/imgs/home.png"></a>
 			<a href="#/" class="blah"><img src="./includes/imgs/stats.png"></a>
 			<a href="#/"><img src="./includes/imgs/edit.png"></a>
 			<a href="#/" class="logout"><img src="./includes/imgs/posts.png"></a>
 		</ul>
+		</div>
 		<ul class="bottom-links">
 			<!-- <a type="submit" name="logout-submit" class="logout" title="Logout"> <img src="includes/imgs/logout.png"></a>	 -->
-			<a href=""><img src="./includes/imgs/white_cog.png"></a>
+			<a href="#/" class="apps"><img src="./includes/imgs/apps.png"></a>
+			<a href="./settings.php"><img src="./includes/imgs/white_cog.png"></a>
 			<a href="" class="profile-circle">NP</a>
 		</ul>
 	</div>

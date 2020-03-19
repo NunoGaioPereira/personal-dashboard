@@ -1,4 +1,4 @@
-const hamb = document.querySelector(".hamburguer");
+const hamb = document.querySelector(".hamb");
 hamb.addEventListener('click', function(){
 	// document.getElementById("moving-nav").style.width="0px";
 	// document.querySelector(".main-wrapper").style.marginLeft="var(--side-nav-width)";
@@ -6,7 +6,7 @@ hamb.addEventListener('click', function(){
 	document.querySelector(".main-wrapper").classList.toggle('open');
 });
 
-const extra = document.querySelector(".logout");
+const extra = document.querySelector(".apps");
 extra.addEventListener('click', function(){
 	document.getElementById("extra-nav").classList.toggle('open');
 	document.getElementById("cover").classList.toggle('open');
