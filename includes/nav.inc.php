@@ -29,11 +29,10 @@
 			<a href=""><img src="./includes/imgs/edit.png"></a>
 			<a href=""><img src="./includes/imgs/posts.png"></a>
 		</ul>
-		<div>
-			<form>
-				<a type="submit" name="logout-submit" class="logout" title="Logout"> <img src="includes/imgs/logout.png"></a>
-			</form>
-		</div>
+		<ul class="bottom-links">
+			<!-- <a type="submit" name="logout-submit" class="logout" title="Logout"> <img src="includes/imgs/logout.png"></a>	 -->
+			<a href="" class="profile-circle">NP</a>
+		</ul>
 	</div>
 
 	<div id="moving-nav">
