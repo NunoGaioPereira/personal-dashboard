@@ -606,6 +606,43 @@ a {
 .day-slider {
 	/*display: flex;*/
 	margin: 20px 0;
+	display: flex;
+	align-items: center;
+}
+
+.day-slider .arrow-left, .day-slider .arrow-right {
+	background-color: #fff;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+	width: 40px;
+	height: 40px;
+	border-radius: 1.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.day-slider .arrow-left p, .day-slider .arrow-right p {
+	color: #111;
+	font-weight: 600;
+	font-size: var(--nav-color);
+	transition: color 0.2s ease-in-out;
+}
+
+.day-slider .arrow-left {
+	margin-right: 10px;
+}
+
+.day-slider .arrow-right {
+	margin-left: 10px;
+}
+
+.day-slider .arrow-left:hover, .day-slider .arrow-right:hover {
+	background-color: var(--nav-color);
+}
+
+.day-slider .arrow-left:hover > p, .day-slider .arrow-right:hover > p {
+	color: #fff;
 }
 
 .day-slider .day-selector {

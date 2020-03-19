@@ -7,6 +7,7 @@
 
 		<div class="holder">
 			<div class="day-slider">
+				<a href="" class="arrow-left"><p><</p></a>
 				<a href="">
 					<div class="day-selector">
 						<p class="day">22</p>
@@ -49,6 +50,7 @@
 						<p class="week-day">S</p>
 					</div>
 				</a>
+				<a href="" class="arrow-right"><p>></p></a>
 			</div>
 			<div class="table-day">
 				<div class="header"><h4>Mar 25</h4></div>
